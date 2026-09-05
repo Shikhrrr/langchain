@@ -1,0 +1,90 @@
+[
+  {
+    "id": "receipt_001",
+    "image": "dataset/receipt_001.png",
+    "description": "Simple grocery receipt, 3 items, tax included",
+    "expected": {
+      "merchant": "Fresh Mart",
+      "date": "2024-03-15",
+      "items": [
+        {"item_name": "Whole Milk 1L", "quantity": 2, "unit_price": "2.99"},
+        {"item_name": "Bread Loaf",    "quantity": 1, "unit_price": "3.49"},
+        {"item_name": "Eggs Dozen",    "quantity": 1, "unit_price": "4.99"}
+      ],
+      "subtotal": "14.46",
+      "tax": "1.16",
+      "discount": null,
+      "total": "15.62"
+    }
+  },
+  {
+    "id": "receipt_002",
+    "image": "dataset/receipt_002.png",
+    "description": "Coffee shop receipt with discount",
+    "expected": {
+      "merchant": "Brew & Co",
+      "date": "2024-04-02",
+      "items": [
+        {"item_name": "Latte",         "quantity": 2, "unit_price": "4.50"},
+        {"item_name": "Blueberry Muffin", "quantity": 1, "unit_price": "3.25"}
+      ],
+      "subtotal": "12.25",
+      "tax": "0.98",
+      "discount": "2.00",
+      "total": "11.23"
+    }
+  },
+  {
+    "id": "receipt_003",
+    "image": "dataset/receipt_003.png",
+    "description": "Restaurant receipt, multiple items, no discount",
+    "expected": {
+      "merchant": "Pasta Palace",
+      "date": "2024-05-20",
+      "items": [
+        {"item_name": "Spaghetti Bolognese", "quantity": 1, "unit_price": "14.99"},
+        {"item_name": "Caesar Salad",        "quantity": 2, "unit_price": "8.50"},
+        {"item_name": "Sparkling Water",     "quantity": 3, "unit_price": "2.00"},
+        {"item_name": "Tiramisu",            "quantity": 1, "unit_price": "6.75"}
+      ],
+      "subtotal": "52.74",
+      "tax": "4.22",
+      "discount": null,
+      "total": "56.96"
+    }
+  },
+  {
+    "id": "receipt_004",
+    "image": "dataset/receipt_004.png",
+    "description": "Single-item pharmacy receipt",
+    "expected": {
+      "merchant": "MedPlus Pharmacy",
+      "date": "2024-06-10",
+      "items": [
+        {"item_name": "Paracetamol 500mg 20ct", "quantity": 1, "unit_price": "5.99"}
+      ],
+      "subtotal": "5.99",
+      "tax": "0.00",
+      "discount": null,
+      "total": "5.99"
+    }
+  },
+  {
+    "id": "receipt_005",
+    "image": "dataset/receipt_005.png",
+    "description": "Electronics store, high-value items, large discount",
+    "expected": {
+      "merchant": "TechZone",
+      "date": "2024-07-04",
+      "items": [
+        {"item_name": "USB-C Cable 2m",     "quantity": 2, "unit_price": "12.99"},
+        {"item_name": "Screen Protector",   "quantity": 1, "unit_price": "9.99"},
+        {"item_name": "Wireless Earbuds",   "quantity": 1, "unit_price": "49.99"}
+      ],
+      "subtotal": "85.96",
+      "tax": "6.88",
+      "discount": "10.00",
+      "total": "82.84"
+    }
+  }
+]
